@@ -1,0 +1,470 @@
+		package resterauntMangagment;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.UIManager;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JSeparator;
+import javax.swing.SwingConstants;
+import javax.swing.JTextField;
+import java.awt.Panel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class resterauntMangagment {
+
+	private JFrame frame;
+	private JTextField textFeild_Fish;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_Fries;
+	private JTextField textField_5;
+	private JTextField textField_6;
+	private JTextField textField_7;
+	private JTextField textField_4;
+	private JTextField textField_8;
+	private JTextField textField_9;
+	private JTextField textField_10;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					resterauntMangagment window = new resterauntMangagment();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public resterauntMangagment() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setForeground(UIManager.getColor("Button.disabledShadow"));
+		frame.setBounds(0, 0, 1380, 800);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel_7_2_2_1_1 = new JLabel("$2.00");
+		lblNewLabel_7_2_2_1_1.setForeground(Color.WHITE);
+		lblNewLabel_7_2_2_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_2_2_1_1.setBackground(Color.WHITE);
+		lblNewLabel_7_2_2_1_1.setBounds(1241, 390, 96, 72);
+		frame.getContentPane().add(lblNewLabel_7_2_2_1_1);
+		
+		JLabel lblNewLabel_7_2_2_1 = new JLabel("$2.00");
+		lblNewLabel_7_2_2_1.setForeground(Color.WHITE);
+		lblNewLabel_7_2_2_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_2_2_1.setBackground(Color.WHITE);
+		lblNewLabel_7_2_2_1.setBounds(1246, 280, 96, 72);
+		frame.getContentPane().add(lblNewLabel_7_2_2_1);
+		
+		JLabel lblNewLabel_7_2_2 = new JLabel("$2.00");
+		lblNewLabel_7_2_2.setForeground(Color.WHITE);
+		lblNewLabel_7_2_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_2_2.setBackground(Color.WHITE);
+		lblNewLabel_7_2_2.setBounds(1241, 200, 96, 72);
+		frame.getContentPane().add(lblNewLabel_7_2_2);
+		
+		JLabel lblNewLabel_7_2_1_1_1 = new JLabel("$3.25");
+		lblNewLabel_7_2_1_1_1.setForeground(Color.WHITE);
+		lblNewLabel_7_2_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_2_1_1_1.setBackground(Color.WHITE);
+		lblNewLabel_7_2_1_1_1.setBounds(600, 480, 96, 72);
+		frame.getContentPane().add(lblNewLabel_7_2_1_1_1);
+		
+		JLabel lblNewLabel_7_2_1_1 = new JLabel("$5.25");
+		lblNewLabel_7_2_1_1.setForeground(Color.WHITE);
+		lblNewLabel_7_2_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_2_1_1.setBackground(Color.WHITE);
+		lblNewLabel_7_2_1_1.setBounds(600, 380, 96, 72);
+		frame.getContentPane().add(lblNewLabel_7_2_1_1);
+		
+		JLabel lblNewLabel_7_2_1 = new JLabel("$5.75");
+		lblNewLabel_7_2_1.setForeground(Color.WHITE);
+		lblNewLabel_7_2_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_2_1.setBackground(Color.WHITE);
+		lblNewLabel_7_2_1.setBounds(600, 300, 96, 72);
+		frame.getContentPane().add(lblNewLabel_7_2_1);
+		
+		JLabel lblNewLabel_7_2 = new JLabel("$6.50");
+		lblNewLabel_7_2.setForeground(new Color(255, 255, 255));
+		lblNewLabel_7_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_2.setBackground(Color.WHITE);
+		lblNewLabel_7_2.setBounds(585, 200, 96, 72);
+		frame.getContentPane().add(lblNewLabel_7_2);
+		
+		JSeparator menuTblTpLine = new JSeparator();
+		menuTblTpLine.setBounds(36, 184, 1320, 2);
+		frame.getContentPane().add(menuTblTpLine);
+		
+		JSeparator middleSeperator_1 = new JSeparator();middleSeperator_1.setOrientation(SwingConstants.VERTICAL);
+		middleSeperator_1.setForeground(Color.WHITE);
+		middleSeperator_1.setBounds(1352, 184, 4, 370);
+		frame.getContentPane().add(middleSeperator_1);
+		
+		JSeparator middleSeperator = new JSeparator();
+		middleSeperator.setOrientation(SwingConstants.VERTICAL);
+		middleSeperator.setForeground(UIManager.getColor("Button.highlight"));
+		middleSeperator.setBounds(700, 184, 2, 390);
+		frame.getContentPane().add(middleSeperator);
+		
+		JSeparator separator_2_1_1 = new JSeparator();
+		separator_2_1_1.setBounds(36, 560, 1320, 2);
+		frame.getContentPane().add(separator_2_1_1);
+		
+		JSeparator separator_2 = new JSeparator();
+		separator_2.setBounds(36, 365, 1306, 10);
+		frame.getContentPane().add(separator_2);
+		
+		JPanel MainTitlepanel = new JPanel();
+		MainTitlepanel.setBackground(Color.BLACK);
+		MainTitlepanel.setBorder(new LineBorder(Color.GRAY, 12));
+		MainTitlepanel.setBounds(0, 10, 1362, 154);
+		frame.getContentPane().add(MainTitlepanel);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		MainTitlepanel.add(lblNewLabel_1);
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\chae_\\Desktop\\pizzA.jpg"));
+		
+		JLabel lblNewLabel = new JLabel("Restaurant Management System\r\n");
+		MainTitlepanel.add(lblNewLabel);
+		lblNewLabel.setLabelFor(frame);
+		lblNewLabel.setBorder(new LineBorder(UIManager.getColor("Button.background"), 12));
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 60));
+		lblNewLabel.setForeground(new Color(240, 240, 240));
+		
+		JLabel lblNewLabel_2 = new JLabel("");
+		MainTitlepanel.add(lblNewLabel_2);
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\chae_\\Desktop\\pizzA.jpg"));
+		
+		JSeparator separator = new JSeparator();
+		separator.setOrientation(SwingConstants.VERTICAL);
+		separator.setBounds(36, 184, 2, 370);
+		frame.getContentPane().add(separator);
+		
+		JSeparator separator_1 = new JSeparator();
+		separator_1.setBounds(36, 270, 1320, 2);
+		frame.getContentPane().add(separator_1);
+		
+		JSeparator separator_2_1 = new JSeparator();
+		separator_2_1.setBounds(36, 460, 1306, 2);
+		frame.getContentPane().add(separator_2_1);
+		
+		Panel chicken = new Panel();
+		chicken.setFont(new Font("Dialog", Font.PLAIN, 16));
+		chicken.setBackground(UIManager.getColor("Button.foreground"));
+		chicken.setBounds(42, 208, 481, 47);
+		frame.getContentPane().add(chicken);
+		
+		JLabel lblNewLabel_5 = new JLabel("Chicken Strips");
+		chicken.add(lblNewLabel_5);
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		lblNewLabel_5.setForeground(UIManager.getColor("Button.highlight"));
+		
+		textField_2 = new JTextField();
+		textField_2.setHorizontalAlignment(SwingConstants.CENTER);
+		textField_2.setText("0");
+		textField_2.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyTyped(KeyEvent evt) {
+				//stuff for Chicken Strips
+				Child_Rest iNum = new Child_Rest();
+				iNum.numbersOnly(evt);
+				
+			}
+		});
+		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		chicken.add(textField_2);
+		textField_2.setColumns(10);
+		
+		Panel chickenburgerpanel_3 = new Panel();
+		chickenburgerpanel_3.setBackground(new Color(0, 0, 0));
+		chickenburgerpanel_3.setBounds(46, 308, 498, 47);
+		frame.getContentPane().add(chickenburgerpanel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Chicken Burger\r\n");
+		lblNewLabel_4.setBackground(new Color(0, 0, 0));
+		chickenburgerpanel_3.add(lblNewLabel_4);
+		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		lblNewLabel_4.setForeground(new Color(255, 255, 255));
+		
+		textField_1 = new JTextField();
+		textField_1.setHorizontalAlignment(SwingConstants.CENTER);
+		textField_1.setText("0");
+		textField_1.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyTyped(KeyEvent eventt) {
+				//stuff for chickenburger thing
+				Child_Rest iThing = new Child_Rest();
+				iThing.numbersOnly(eventt);
+				
+			}
+		});
+		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		chickenburgerpanel_3.add(textField_1);
+		textField_1.setColumns(10);
+		
+		Panel fish = new Panel();
+		fish.setFont(new Font("Dialog", Font.PLAIN, 24));
+		fish.setBackground(UIManager.getColor("Button.foreground"));
+		fish.setBounds(41, 400, 459, 54);
+		frame.getContentPane().add(fish);
+		
+		JLabel lblNewLabel_3 = new JLabel("Filet-o-fish");
+		fish.add(lblNewLabel_3);
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		lblNewLabel_3.setForeground(UIManager.getColor("Button.highlight"));
+		
+		textFeild_Fish = new JTextField();
+		textFeild_Fish.setText("0");
+		textFeild_Fish.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyTyped(KeyEvent et) {
+				//Stuff for fish
+				Child_Rest iNumb = new Child_Rest();
+				iNumb.numbersOnly(et);
+			}
+		});
+		textFeild_Fish.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		textFeild_Fish.setBackground(new Color(255, 255, 255));
+		fish.add(textFeild_Fish);
+		textFeild_Fish.setHorizontalAlignment(SwingConstants.CENTER);
+		textFeild_Fish.setColumns(10);
+		
+		Panel friespanel_5 = new Panel();
+		friespanel_5.setBackground(UIManager.getColor("Button.foreground"));
+		friespanel_5.setBounds(45, 482, 365, 47);
+		frame.getContentPane().add(friespanel_5);
+		
+		JLabel lblNewLabel_6 = new JLabel("Fries");
+		friespanel_5.add(lblNewLabel_6);
+		lblNewLabel_6.setForeground(UIManager.getColor("Button.highlight"));
+		lblNewLabel_6.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		
+		textField_Fries = new JTextField();
+		textField_Fries.setHorizontalAlignment(SwingConstants.CENTER);
+		textField_Fries.setText("0");
+		textField_Fries.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyTyped(KeyEvent est) {
+			
+				Child_Rest iOui = new Child_Rest();
+				iOui.numbersOnly(est);
+				
+			}
+		});
+		textField_Fries.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		friespanel_5.add(textField_Fries);
+		textField_Fries.setToolTipText("");
+		textField_Fries.setBackground(new Color(255, 255, 255));
+		textField_Fries.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Exit");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				//stuff for the exit button
+				Child_Rest iExit = new Child_Rest();
+				iExit.iExitSystem();
+				
+			}
+		});
+		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnNewButton.setBounds(1139, 657, 184, 54);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnClear = new JButton("Clear");
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				JTextField cleartext = null;
+				for(java.awt.Component c:panel_1.getComponents()){
+					
+					
+				}
+				
+			}
+		});
+		btnClear.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnClear.setBounds(929, 657, 184, 54);
+		frame.getContentPane().add(btnClear);
+		
+		JButton btnNewButton_1_1 = new JButton("Total");
+		btnNewButton_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_1_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnNewButton_1_1.setBounds(700, 657, 184, 54);
+		frame.getContentPane().add(btnNewButton_1_1);
+		
+		JLabel lblNewLabel_7 = new JLabel("0");
+		lblNewLabel_7.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_7.setForeground(new Color(0, 0, 0));
+		lblNewLabel_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7.setBackground(new Color(255, 255, 255));
+		lblNewLabel_7.setBounds(79, 590, 331, 47);
+		frame.getContentPane().add(lblNewLabel_7);
+		
+		JLabel lblNewLabel_7_1 = new JLabel("0");
+		lblNewLabel_7_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_7_1.setForeground(Color.BLACK);
+		lblNewLabel_7_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_1.setBackground(Color.WHITE);
+		lblNewLabel_7_1.setBounds(66, 647, 331, 47);
+		frame.getContentPane().add(lblNewLabel_7_1);
+		
+		JLabel lblNewLabel_7_1_1 = new JLabel("0");
+		lblNewLabel_7_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_7_1_1.setForeground(Color.BLACK);
+		lblNewLabel_7_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_7_1_1.setBackground(Color.WHITE);
+		lblNewLabel_7_1_1.setBounds(66, 706, 331, 47);
+		frame.getContentPane().add(lblNewLabel_7_1_1);
+		
+		textField_5 = new JTextField();
+		textField_5.setColumns(10);
+		textField_5.setBounds(186, 599, 135, 38);
+		frame.getContentPane().add(textField_5);
+		
+		textField_6 = new JTextField();
+		textField_6.setColumns(10);
+		textField_6.setBounds(186, 647, 135, 38);
+		frame.getContentPane().add(textField_6);
+		
+		textField_7 = new JTextField();
+		textField_7.setColumns(10);
+		textField_7.setBounds(186, 704, 135, 38);
+		frame.getContentPane().add(textField_7);
+		
+		Panel nestea = new Panel();
+		nestea.setBackground(Color.BLACK);
+		nestea.setBounds(710, 210, 370, 47);
+		frame.getContentPane().add(nestea);
+		
+		JLabel lblNewLabel_4_1 = new JLabel("Nestea");
+		lblNewLabel_4_1.setForeground(Color.WHITE);
+		lblNewLabel_4_1.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		nestea.add(lblNewLabel_4_1);
+		
+		textField_4 = new JTextField();
+		textField_4.setHorizontalAlignment(SwingConstants.CENTER);
+		textField_4.setText("0");
+		textField_4.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyTyped(KeyEvent tea) {
+				//nestea
+				Child_Rest iTEa = new Child_Rest();
+				iTEa.numbersOnly(tea);
+			}
+		});
+		textField_4.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		textField_4.setColumns(10);
+		nestea.add(textField_4);
+		
+		Panel spritelabel = new Panel();
+		spritelabel.setBackground(Color.BLACK);
+		spritelabel.setBounds(710, 300, 370, 47);
+		frame.getContentPane().add(spritelabel);
+		
+		JLabel lblNewLabel_4_1_1 = new JLabel("Sprite");
+		lblNewLabel_4_1_1.setForeground(Color.WHITE);
+		lblNewLabel_4_1_1.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		spritelabel.add(lblNewLabel_4_1_1);
+		
+		textField_8 = new JTextField();
+		textField_8.setHorizontalAlignment(SwingConstants.CENTER);
+		textField_8.setText("0");
+		textField_8.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyTyped(KeyEvent spr) {
+				//sprite
+				Child_Rest iSprite = new Child_Rest();
+				iSprite.numbersOnly(spr);
+			}
+		});
+		textField_8.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		textField_8.setColumns(10);
+		spritelabel.add(textField_8);
+		
+		Panel spritelabel_1 = new Panel();
+		spritelabel_1.setBackground(Color.BLACK);
+		spritelabel_1.setBounds(710, 400, 370, 47);
+		frame.getContentPane().add(spritelabel_1);
+		
+		JLabel lblNewLabel_4_1_1_1 = new JLabel("Apple Juice");
+		lblNewLabel_4_1_1_1.setForeground(Color.WHITE);
+		lblNewLabel_4_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		spritelabel_1.add(lblNewLabel_4_1_1_1);
+		
+		textField_9 = new JTextField();
+		textField_9.setHorizontalAlignment(SwingConstants.CENTER);
+		textField_9.setText("0");
+		textField_9.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyTyped(KeyEvent juice) {
+				//apple juice
+				Child_Rest iAppl = new Child_Rest();
+				iAppl.numbersOnly(juice);
+			}
+		});
+		textField_9.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		textField_9.setColumns(10);
+		spritelabel_1.add(textField_9);
+		
+		Panel Salad = new Panel();
+		Salad.setBackground(Color.BLACK);
+		Salad.setBounds(710, 482, 510, 45);
+		frame.getContentPane().add(Salad);
+		
+		JLabel lblNewLabel_4_1_1_1_1 = new JLabel("Drinks Total:");
+		lblNewLabel_4_1_1_1_1.setForeground(Color.WHITE);
+		lblNewLabel_4_1_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		Salad.add(lblNewLabel_4_1_1_1_1);
+		
+		textField_10 = new JTextField();
+		textField_10.setHorizontalAlignment(SwingConstants.CENTER);
+		textField_10.setText("0");
+		textField_10.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyTyped(KeyEvent eTotal) {
+				//drinks total
+				Child_Rest iDrinks = new Child_Rest();
+				iDrinks.numbersOnly(eTotal);
+			}
+		});
+		textField_10.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		textField_10.setColumns(10);
+		Salad.add(textField_10);
+		
+		JPanel menuPanel = new JPanel();
+		menuPanel.setBackground(new Color(0, 0, 0));
+		menuPanel.setBorder(new LineBorder(UIManager.getColor("Button.darkShadow"), 12));
+		menuPanel.setBounds(22, 174, 1340, 398);
+		frame.getContentPane().add(menuPanel);
+	}
+}
